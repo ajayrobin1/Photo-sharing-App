@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Cookie';
+  src: local('Cookie'), url(./fonts/Cookie/Cookie-Regular.ttf) format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  font-family: 'Cookie' !important;
+  font-size: 1.6rem !important;
+  text-transform: none;
+}
+
+h1.h6{
+  font-size: 1rem;
+}
+
+.nav-list-top{
+  display: none;
+}
+
+.main-container{
+  margin-bottom: 42px;
+}
+
+    img{
+      object-fit: cover;
+    }
+/* purgecss ignore */
+    .img-hide{
+      display: none;
+    }
+/* purgecss ignore */
+    .img-show{
+      display: block;
+    }
+    
+.snackbar{
+position: fixed;
+width: 100%;
+z-index: 1500;
+bottom: 30px;
+
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.avatar{
+border-radius: 50%;
+width: 30px;
+height: 30px;
+}
+
+.loading-screen{
+text-align: center;
+}
+.custom-modal-dialog{
+position: fixed;
+margin-left: auto;
+right: 0%;
+z-index: 1400;
+}
+a:-webkit-any-link {
+text-decoration: none;
+cursor: pointer;
+}
+
+.backdrop {
+position: fixed;
+top: 0; right: 0; bottom: 0; left: 0;
+z-index: 1200 !important;
+
+}
+
+.backdrop.backdrop-modal{
+  background-color: rgba(0, 0, 0, 0.56) !important;
+  }
+
+
+.custom-modal-box{
+position: fixed;
+  z-index: 1400;
+  right: 12%;
+  bottom: 50%;
+
+}
+
+.img-placeholder{
+  width: 400px;
+  height: 500px;
+}
+
+.img-list-container{
+  min-height: 408px;
+}
+
+.list-group-item{
+border: none !important;
+}
+
+svg
+{
+   transform: translateY(-2px);
+}
+.img-modal-box{
+  position: fixed;
+  z-index: 1400;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  max-height: 100vh;
+}
+.react-transform-wrapper{
+  margin: 0 auto !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-modal-box{
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+  }
+
+  div.main-container{
+    margin-bottom: 0;
+  }
+  .custom-modal-dialog{
+    margin-left: auto !important;
+   }
+  
+
+  .nav-bottom{
+    display: none !important;
+  }
+
+  .snackbar{
+    position: fixed;
+    z-index: 1000;
+    bottom: 16px;
+  }
+
+  .snackbar-alert{
+    max-width: 400px;
+  }
+
+  .custom-modal-box{
+    position: absolute;
+  z-index: 1400;
+   left: 33%;
+  bottom: 50%;
+  }
+
+  .nav-list-top{
+    display: block;
+  }
+
+  .main-comp{
+    margin-top:50px;
+    margin-bottom: 0;
+  min-height: calc(100vh - 50px);
+  }
+}
